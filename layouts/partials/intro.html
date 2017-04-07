@@ -18,7 +18,7 @@
 				<!-- <span>{{ with .Site.Params.intro.video }}{{ . }}{{ end }}</span> -->
 				<span>{{.Site.Params.intro.video.title | markdownify }}</span>
 
-				<a href="{{ .Site.Params.intro.video.url }}" class="popup-vimeo btn-video"><i class="{{ .Site.Params.intro.video.icon | markdownify }}"></i></a>
+				<button  class="btn btn-primary" href="{{ .Site.Params.intro.video.url }}" class="plo-button">{{ .Site.Params.intro.video.text }}</button>
 			</div>
 			{{ end }}
 		</div>
