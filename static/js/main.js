@@ -324,6 +324,50 @@
 		}
 	};
 
+
+	var developersAnimate = function() {
+		var developers = $('#fh5co-developers');
+		if ( developers.length > 0 ) {
+
+			developers.waypoint( function( direction ) {
+
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+					var sec = developers.find('.to-animate').length,
+						sec = parseInt((sec * delayTime) + (delayTime*2));
+
+					setTimeout(function() {
+						developers.find('.to-animate').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * delayTime, 'easeInOutExpo' );
+
+						});
+					}, delayTime);
+
+					setTimeout(function() {
+						developers.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('bounceIn animated');
+							},  k * delayTime, 'easeInOutExpo' );
+
+						});
+					}, sec);
+
+
+
+					$(this.element).addClass('animated');
+
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
 	var aboutAnimate = function() {
 		var about = $('#fh5co-about');
 		if ( about.length > 0 ) {
@@ -465,6 +509,7 @@
 		workAnimate();
 		testimonialAnimate();
 		servicesAnimate();
+		developersAnimate();
 		aboutAnimate();
 		countersAnimate();
 		contactAnimate();
