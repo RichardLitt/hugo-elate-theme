@@ -20,5 +20,18 @@
 				<div class="clearfix visible-sm-block"></div>
 			{{ end }}
 			</div>
+			<div class="row health-check">
+				<div class="col-md-12 section-heading text-right">
+					<hr />
+					<i class="icon to-animate-2 icon-user-md"></i><h2 class="right-border to-animate">{{ with .Site.Params.developers.audit }}{{ . | markdownify }}{{ end }}</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-4 subtext to-animate">
+							<h3>{{ with .Site.Params.developers.auditText }}{{ . | markdownify }}{{ end }}</h3>
+
+							<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.plasso.marketUrl }}" target="_blank">{{ .Site.Params.plasso.marketText }}</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>

@@ -573,6 +573,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .watch-video .btn-video {
   display: block;
   font-size: 60px;
@@ -1142,6 +1143,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0px;
   bottom: 0;
 }
+
 .section-heading h2:after {
   content: "";
   position: absolute;
@@ -1151,6 +1153,18 @@ h1, h2, h3, h4, h5, h6 {
   background: #52d3aa;
   left: 50%;
   margin-left: -40px;
+  bottom: 0;
+}
+.section-heading h2.right-border:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #52d3aa;
+  right: 0%;
+  left: 100%;
+  margin-left: -80px;
   bottom: 0;
 }
 @media screen and (max-width: 768px) {

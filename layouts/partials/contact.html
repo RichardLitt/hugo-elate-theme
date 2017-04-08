@@ -5,9 +5,13 @@
 					<h2 class="to-animate">{{ with .Site.Params.contact.title }}{{ . | markdownify }}{{ end }}</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>{{ with .Site.Params.contact.description }}{{ . | markdownify }}{{ end }}</h3>
+							<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.intro.plasso.url }}" target="_blank">{{ .Site.Params.intro.plasso.text }}</a></p>
 						</div>
 					</div>
+					<div class="row more-info">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>{{ with .Site.Params.contact.description }}{{ . | markdownify }}{{ end }}</h3>
+						</div>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
