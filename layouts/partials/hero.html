@@ -4,16 +4,18 @@
 			<div class="text-wrap">
 				<div class="text-inner">
 					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
+						<div class="col-md-8 col-md-offset-2 opaque">
 							<h1 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
 							<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
 
 							{{ if .Site.Params.intro.plasso.enable }}
-							<div class="row watch-video text-center to-animate cta">
+							<div class="col-md-4 col-md-offset-1 cta-btns">
+								<p><a  class="btn btn-primary btn-devexp plo-button" href="{{ .Site.Params.plasso.marketUrl }}" target="_blank">{{ .Site.Params.plasso.marketText }}</a></p>
+							</div>
+							<div class="col-md-4 col-md-offset-2 cta-btns">
 								<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.intro.plasso.url }}" target="_blank">{{ .Site.Params.intro.plasso.text }}</a></p>
 							</div>
 							{{ end }}
-
 						</div>
 					</div>
 				</div>
