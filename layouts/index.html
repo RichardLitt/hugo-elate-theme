@@ -31,6 +31,10 @@
         	{{ partial "organizations.html" .}}
 		{{ end }}
 
+		{{ if .Site.Params.pricing.enable }}
+        	{{ partial "pricing.html" .}}
+		{{ end }}
+
 		{{ if .Site.Params.about.enable }}
         	{{ partial "about.html" .}}
 		{{ end }}
