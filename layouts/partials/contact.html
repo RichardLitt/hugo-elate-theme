@@ -15,6 +15,13 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 to-animate text-center">
+				<h3>Want to learn how to level up at Open Source?</h3>
+				{{ partial "newsletter.html" . }}
+			</div>
+		</div>
+
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-6 to-animate">
 					<h3>{{ with .Site.Params.contact.info }}{{ . | markdownify }}{{ end }}</h3>
