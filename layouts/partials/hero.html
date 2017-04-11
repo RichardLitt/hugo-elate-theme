@@ -7,6 +7,13 @@
 						<div class="col-md-8 col-md-offset-2">
 							<h1 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
 							<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
+
+							{{ if .Site.Params.intro.plasso.enable }}
+							<div class="row watch-video text-center to-animate cta">
+								<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.intro.plasso.url }}" target="_blank">{{ .Site.Params.intro.plasso.text }}</a></p>
+							</div>
+							{{ end }}
+
 						</div>
 					</div>
 				</div>

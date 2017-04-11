@@ -13,11 +13,11 @@
 				</div>
 				{{ end }}
 			</div>
-			{{ if .Site.Params.intro.plasso.enable }}
+			{{ if .Site.Params.plasso.enable }}
 			<div class="row watch-video text-center to-animate">
-				{{ with .Site.Params.intro.plasso.title }}<span>{{ . }}</span>{{ end }}
+				{{ with .Site.Params.plasso.marketLede }}<span>{{ . }}</span>{{ end }}
 
-				<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.intro.plasso.url }}" target="_blank">{{ .Site.Params.intro.plasso.text }}</a></p>
+				<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.plasso.marketUrl }}" target="_blank">{{ .Site.Params.plasso.marketText }}</a></p>
 			</div>
 			{{ end }}
 		</div>
