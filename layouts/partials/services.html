@@ -26,7 +26,7 @@
 					<i class="icon to-animate-2 icon-user-md"></i><h2 class="right-border to-animate">Not sure how much work you need?</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-4 subtext to-animate">
-							<h3>{{ with .Site.Params.developers.auditText }}{{ . | markdownify }}{{ end }}</h3>
+							<h3>{{ with .Site.Params.organization.auditText }}{{ . | markdownify }}{{ end }}</h3>
 
 							<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.plasso.marketUrl }}" target="_blank">{{ .Site.Params.plasso.marketText }}</a></p>
 						</div>
