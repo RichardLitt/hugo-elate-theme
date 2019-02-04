@@ -8,12 +8,9 @@
 							<h1 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1>
 							<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
 
-							{{ if .Site.Params.intro.plasso.enable }}
-							<div class="col-md-4 col-md-offset-1 cta-btns">
-								<p><a  class="btn btn-primary btn-devexp plo-button" href="{{ .Site.Params.plasso.marketUrl }}" target="_blank">{{ .Site.Params.plasso.marketText }}</a></p>
-							</div>
-							<div class="col-md-4 col-md-offset-2 cta-btns">
-								<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.intro.plasso.url }}" target="_blank">{{ .Site.Params.intro.plasso.text }}</a></p>
+							{{ if .Site.Params.intro.emailout.enable }}
+							<div class="cta-btns">
+								<p><a  class="btn btn-primary btn-devexp" href="{{ .Site.Params.intro.emailout.url }}" target="_blank">{{ .Site.Params.intro.emailout.text }}</a></p>
 							</div>
 							{{ end }}
 						</div>
